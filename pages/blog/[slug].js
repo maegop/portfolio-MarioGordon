@@ -7,8 +7,7 @@ import path from "path";
 import { postFilePaths, POSTS_PATH } from "../../lib/mdx";
 import { Flex, Heading, Text, Link, Divider } from "@chakra-ui/react";
 import Container from "../../components/Container";
-//import BlogSeo from '../../components/BlogSEO'
-//<BlogSeo url={`https://example.io/blog${slug}`} {...frontMatter} />
+import BlogSeo from "../../components/BlogSEO";
 
 import { useRouter } from "next/router";
 
@@ -24,6 +23,8 @@ export default function PostPage({ source, frontMatter }) {
   const slug = router.asPath.replace("/blog", "");
   return (
     <>
+      <BlogSeo url={`https://example.io/blog${slug}`} {...frontMatter} />
+
       <Container>
         <Flex flexDir="column">
           <Heading as="h1">{frontMatter.title}</Heading>

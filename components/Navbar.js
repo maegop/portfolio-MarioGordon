@@ -16,7 +16,7 @@ const Navbar = () => {
     <Flex
       flexDirection="row"
       justifyContent="space-between"
-      maxWidth="800px"
+      maxW={"8xl"}
       minWidth="356px"
       width="100%"
       as="nav"

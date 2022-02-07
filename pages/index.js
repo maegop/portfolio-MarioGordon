@@ -1,19 +1,31 @@
 import Container from "../components/Container";
 import { Heading, Text, Button } from "@chakra-ui/react";
+import { NextSeo } from "next-seo";
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Navbar from "../components/Navbar";
+
+const url = "https://example.io/";
+const title = "Mario Gordon | Software Developer Portfolio";
+const description = "Awesome description.";
 
 export default function Home() {
   return (
     <>
+      <NextSeo
+        title={title}
+        description={description}
+        canonical={url}
+        openGraph={{
+          url,
+          title,
+          description,
+        }}
+      />
+
       <Container>
-        <Heading as="h1" size="3xl">
-          Hello, I am Mario Gordon
-        </Heading>
-        <Text fontSize="2xl" my={4}>
-          A software developer and Electronics Engineer .
-        </Text>
-        <Button colorScheme="cyan" size="lg">
-          About Me
-        </Button>
+        <Hero />
+        <About />
       </Container>
     </>
   );
