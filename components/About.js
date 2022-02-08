@@ -11,7 +11,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-export default function SplitWithImage() {
+export default function AboutMe() {
   return (
     <Container maxW={"8xl"} py={14}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
@@ -19,10 +19,10 @@ export default function SplitWithImage() {
           <Heading>About me</Heading>
           <Text
             textTransform={"uppercase"}
-            color={"blue.400"}
+            color={"teal.400"}
             fontWeight={600}
             fontSize={"sm"}
-            bg={useColorModeValue("blue.50", "blue.900")}
+            bg={useColorModeValue("teal.50", "teal.900")}
             p={2}
             alignSelf={"flex-start"}
             rounded={"md"}

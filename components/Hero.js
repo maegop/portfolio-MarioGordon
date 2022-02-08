@@ -7,10 +7,11 @@ import {
   Text,
   Button,
   Image,
-  IconButton,
 } from "@chakra-ui/react";
 
-export default function CallToActionWithVideo() {
+import happy from "../public/mem_happy.png";
+
+export default function CallToActionHero() {
   return (
     <Container maxW={"8xl"}>
       <Stack
@@ -21,30 +22,24 @@ export default function CallToActionWithVideo() {
       >
         {/* Left side of hero page */}
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-          <Heading
-            lineHeight={1.1}
-            fontWeight={600}
-            fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
-          >
+          <Heading lineHeight={1.1} fontWeight={600}>
             <Text
               as={"span"}
               position={"relative"}
-              _after={{
-                content: "''",
-                width: "full",
-                height: "30%",
-                position: "absolute",
-                bottom: 1,
-                left: 0,
-                bg: "red.400",
-                zIndex: -1,
-              }}
+              bgGradient="linear(to-l, #7928CA,teal.400)"
+              bgClip="text"
+              fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
             >
               Hi, I am Mario Gordon
             </Text>
             <br />
-            <Text as={"span"} color={"red.400"}>
-              use everywhere!
+            <Text
+              as={"span"}
+              color={"teal.400"}
+              fontSize={{ base: "2xl", sm: "3xl", lg: "5xl" }}
+              mt={5}
+            >
+              Software Developer
             </Text>
           </Heading>
           <Text color={"gray.500"}>
@@ -61,11 +56,11 @@ export default function CallToActionWithVideo() {
               size={"lg"}
               fontWeight={"normal"}
               px={6}
-              colorScheme={"red"}
-              bg={"red.400"}
-              _hover={{ bg: "red.500" }}
+              colorScheme={"teal"}
+              bg={"teal.400"}
+              _hover={{ bg: "teal.500" }}
             >
-              Get started
+              Know me
             </Button>
             <Button rounded={"full"} size={"lg"} fontWeight={"normal"} px={6}>
               How It Works
@@ -87,27 +82,15 @@ export default function CallToActionWithVideo() {
             rounded={"2xl"}
             boxShadow={"2xl"}
             width={"full"}
-            overflow={"hidden"}
           >
-            <IconButton
-              aria-label={"Play Button"}
-              variant={"ghost"}
-              _hover={{ bg: "transparent" }}
-              size={"lg"}
-              color={"white"}
-              position={"absolute"}
-              left={"50%"}
-              top={"50%"}
-              transform={"translateX(-50%) translateY(-50%)"}
-            />
             <Image
-              alt={"Hero Image"}
+              alt={"Hero Image Mario Gordon Portfolio"}
               fit={"cover"}
               align={"center"}
               w={"100%"}
               h={"100%"}
               src={
-                "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
+                "https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
               }
             />
           </Box>
