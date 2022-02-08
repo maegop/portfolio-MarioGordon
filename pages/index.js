@@ -1,10 +1,11 @@
 import Container from "../components/Container";
-import { Heading, Text, Button } from "@chakra-ui/react";
+import { Heading, Text, Box, SimpleGrid } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
 import Hero from "../components/Hero";
-import About from "../components/About";
-import Contactme from "../components/Contactme";
+import AboutMe from "../components/AboutMe";
+import ContactMe from "../components/ContactMe";
 import Footer from "../components/Footer";
+import Projects from "../components/Projects";
 
 const url = "https://example.io/";
 const title = "Mario Gordon | Software Developer Portfolio";
@@ -26,9 +27,11 @@ export default function Home() {
 
       <Container>
         <Hero />
-        <About />
+        <AboutMe />
+        <Projects />
       </Container>
-      <Contactme />
+
+      <ContactMe />
       <Footer />
     </>
   );
