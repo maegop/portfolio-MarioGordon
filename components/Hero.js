@@ -7,9 +7,8 @@ import {
   Text,
   Button,
   Image,
+  Img,
 } from "@chakra-ui/react";
-
-import happy from "../public/mem_happy.png";
 
 export default function CallToActionHero() {
   return (
@@ -78,19 +77,19 @@ export default function CallToActionHero() {
         >
           <Box
             position={"relative"}
-            height={"300px"}
+            height={"320px"}
             rounded={"2xl"}
             boxShadow={"2xl"}
             width={"full"}
           >
-            <Image
+            <Img
               alt={"Hero Image Mario Gordon Portfolio"}
               fit={"cover"}
-              align={"center"}
-              w={"100%"}
-              h={"100%"}
+              align={"right"}
+              width={{ base: 250, md: 300 }}
+              height={{ base: 260, md: 320 }}
               src={
-                "https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                "https://affectionate-engelbart-c0321f.netlify.app/images/mem_happy.png"
               }
             />
           </Box>
