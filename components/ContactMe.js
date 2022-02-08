@@ -80,7 +80,7 @@ export default function ContactMe() {
                   hasArrow
                 >
                   <IconButton
-                    aria-label="email"
+                    aria-label="copy email address"
                     variant="ghost"
                     size="lg"
                     fontSize="3xl"
@@ -94,9 +94,9 @@ export default function ContactMe() {
                   />
                 </Tooltip>
 
-                <Link href="#">
+                <Link href="https://github.com/maegop">
                   <IconButton
-                    aria-label="github"
+                    aria-label="github link"
                     variant="ghost"
                     size="lg"
                     fontSize="3xl"
@@ -106,10 +106,11 @@ export default function ContactMe() {
                       color: useColorModeValue("white", "gray.700"),
                     }}
                     isRound
+                    isExternal="true"
                   />
                 </Link>
 
-                <Link href="#">
+                <Link href="https://twitter.com/Mario_Gordon">
                   <IconButton
                     aria-label="twitter link"
                     variant="ghost"
@@ -123,7 +124,7 @@ export default function ContactMe() {
                   />
                 </Link>
 
-                <Link href="#">
+                <Link href="">
                   <IconButton
                     aria-label="linkedin link"
                     variant="ghost"
@@ -139,11 +140,15 @@ export default function ContactMe() {
               </Stack>
 
               <Box
+                as={"form"}
                 bg={useColorModeValue("white", "gray.700")}
                 borderRadius="lg"
                 p={8}
                 color={useColorModeValue("gray.700", "whiteAlpha.900")}
                 shadow="base"
+                name="contact"
+                method="POST"
+                data-netlify="true"
               >
                 <VStack spacing={5}>
                   <FormControl isRequired>
@@ -176,7 +181,6 @@ export default function ContactMe() {
                       resize="none"
                     />
                   </FormControl>
-
                   <Button
                     colorScheme="teal"
                     bg="teal.400"

@@ -21,13 +21,12 @@ export default function ProjectCard({
   demoHref,
   languageColor,
   language,
-  youtubeId,
   starCount,
   stargazersUrl,
   homepage,
 }) {
   const [opacity, setOpacity] = useState(0);
-  const [lineColor, setLineColor] = useState("blue.500");
+  const [lineColor, setLineColor] = useState("teal.500");
   const { colorMode } = useColorMode();
 
   const colorSecondary = {
@@ -44,7 +43,7 @@ export default function ProjectCard({
       flexDir="column"
       _hover={{
         transform: "scale(1.05)",
-        border: `2px solid ${languageColor}`,
+        border: `3px solid ${languageColor}`,
       }}
       transition="transform .5s ease-in-out, border .5s ease-in-out"
       boxShadow={boxShadowColor[colorMode]}
@@ -54,7 +53,7 @@ export default function ProjectCard({
         setOpacity(1), setLineColor(languageColor);
       }}
       onMouseLeave={() => {
-        setOpacity(0), setLineColor("blue.500");
+        setOpacity(0), setLineColor("teal.500");
       }}
     >
       <Flex p={[5, 15, 25]} flexDir="column" justify="space-between" h="100%">

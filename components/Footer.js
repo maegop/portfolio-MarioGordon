@@ -6,9 +6,9 @@ import {
   Stack,
   Text,
   useColorModeValue,
-  VisuallyHidden,
+  Tooltip,
 } from "@chakra-ui/react";
-import { FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { ReactNode } from "react";
 
 export default function SmallCentered() {
@@ -29,7 +29,6 @@ export default function SmallCentered() {
           <Link href={"/"}>Home</Link>
           <Link href={"/about"}>About</Link>
           <Link href={"/blog"}>Blog</Link>
-          <Link href={"#"}>Contact</Link>
         </Stack>
       </Container>
 
@@ -47,11 +46,38 @@ export default function SmallCentered() {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© Made with Love by Mario Gordon. All rights reserved</Text>
+          <Text>© Made with Love by Mario Gordon.</Text>
+
           <Stack direction={"row"} spacing={7}>
-            <FaTwitter />
-            <FaGithub />
-            <FaInstagram />
+            <Tooltip label={"Share my work"} closeOnClick={true} hasArrow>
+              <Link
+                href={
+                  "https://twitter.com/intent/tweet?text=Check%20out%20a%20Software%20Developer%20Portfolio%20built%20by%20@Mario_Gordon%20https://mariogordon.netlify.app"
+                }
+                isExternal
+              >
+                <FaTwitter />
+              </Link>
+            </Tooltip>
+
+            <Link
+              href={"https://twitter.com/Mario_Gordon"}
+              passHref
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </Link>
+
+            <Tooltip label={"Share my work"} closeOnClick={true} hasArrow>
+              <Link
+                href={
+                  "https://www.linkedin.com/shareArticle?mini=true&url=https://mariogordon.netlify.app"
+                }
+                isExternal
+              >
+                <FaLinkedin />
+              </Link>
+            </Tooltip>
           </Stack>
         </Container>
       </Box>
