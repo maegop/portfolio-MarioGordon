@@ -1,10 +1,24 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
-import { Heading, Text, Box, SimpleGrid } from "@chakra-ui/react";
+import {
+  Heading,
+  Text,
+  Box,
+  SimpleGrid,
+  useColorModeValue,
+  Container,
+} from "@chakra-ui/react";
 
 const Projects = () => {
   return (
-    <>
+    <Container
+      maxW={"8xl"}
+      py={14}
+      borderTopWidth={1}
+      borderStyle={"solid"}
+      borderColor={useColorModeValue("gray.200", "gray.700")}
+      mb={{ base: 2, md: 5 }}
+    >
       <Box as="section" mt={10} mb={20}>
         <Heading
           letterSpacing="tight"
@@ -43,7 +57,7 @@ const Projects = () => {
           />
         </SimpleGrid>
       </Box>
-    </>
+    </Container>
   );
 };
 

@@ -13,8 +13,27 @@ import {
 
 export default function AboutMe() {
   return (
-    <Container maxW={"8xl"} py={14}>
+    <Container
+      maxW={"8xl"}
+      py={14}
+      borderTopWidth={1}
+      borderStyle={"solid"}
+      borderColor={useColorModeValue("gray.200", "gray.700")}
+      mb={{ base: 2, md: 5 }}
+    >
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+        <Flex>
+          <Img
+            rounded={"md"}
+            alt={"about me image"}
+            loading={"lazy"}
+            src={
+              "https://affectionate-engelbart-c0321f.netlify.app/images/profile.jpg"
+            }
+            objectFit={"cover"}
+            layout="fill"
+          />
+        </Flex>
         <Stack spacing={4}>
           <Heading>About me</Heading>
           <Text
@@ -45,17 +64,6 @@ export default function AboutMe() {
             }
           ></Stack>
         </Stack>
-        <Flex>
-          <Img
-            rounded={"md"}
-            alt={"about me image"}
-            loading={"lazy"}
-            src={
-              "https://affectionate-engelbart-c0321f.netlify.app/images/profile.jpg"
-            }
-            objectFit={"cover"}
-          />
-        </Flex>
       </SimpleGrid>
     </Container>
   );

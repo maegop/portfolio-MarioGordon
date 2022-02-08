@@ -12,7 +12,7 @@ import {
 
 export default function CallToActionHero() {
   return (
-    <Container maxW={"8xl"}>
+    <Container maxW={"8xl"} mb={{ base: 10, md: 14 }}>
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
@@ -31,6 +31,7 @@ export default function CallToActionHero() {
             >
               Hi, I am Mario Gordon
             </Text>
+
             <br />
             <Text
               as={"span"}
