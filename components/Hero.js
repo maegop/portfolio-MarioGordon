@@ -7,11 +7,7 @@ import {
   Text,
   Button,
   Image,
-  Icon,
   IconButton,
-  createIcon,
-  IconProps,
-  useColorModeValue,
 } from "@chakra-ui/react";
 
 export default function CallToActionWithVideo() {

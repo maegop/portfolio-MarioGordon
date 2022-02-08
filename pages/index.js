@@ -3,7 +3,8 @@ import { Heading, Text, Button } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
 import Hero from "../components/Hero";
 import About from "../components/About";
-import Navbar from "../components/Navbar";
+import Contactme from "../components/Contactme";
+import Footer from "../components/Footer";
 
 const url = "https://example.io/";
 const title = "Mario Gordon | Software Developer Portfolio";
@@ -27,6 +28,8 @@ export default function Home() {
         <Hero />
         <About />
       </Container>
+      <Contactme />
+      <Footer />
     </>
   );
 }
