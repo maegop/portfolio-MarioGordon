@@ -149,7 +149,9 @@ export default function ContactMe() {
                 name="contact"
                 method="POST"
                 data-netlify="true"
+                action="/success"
               >
+                <input type="hidden" name="form-name" value="contact" />
                 <VStack spacing={5}>
                   <FormControl isRequired>
                     <FormLabel>Name</FormLabel>
