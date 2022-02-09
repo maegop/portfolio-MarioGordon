@@ -148,8 +148,8 @@ export default function ContactMe() {
                 shadow="base"
                 name="contact"
                 method="POST"
-                data-netlify="true"
-                action="/success"
+                netlify
+                action="/blog"
               >
                 <input type="hidden" name="form-name" value="contact" />
                 <VStack spacing={5}>
@@ -190,6 +190,7 @@ export default function ContactMe() {
                       bg: "teal.500",
                     }}
                     isFullWidth
+                    type="submit"
                   >
                     Send Message
                   </Button>
