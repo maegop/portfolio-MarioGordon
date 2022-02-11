@@ -58,6 +58,27 @@ export default function AboutMe() {
             Ecuador, but I live in Düren, Germany. I am passionate about
             technology and software development.
           </Text>
+
+          <Text
+            textTransform={"uppercase"}
+            color={"teal.400"}
+            fontWeight={600}
+            fontSize={"sm"}
+            bg={useColorModeValue("teal.50", "teal.900")}
+            p={2}
+            alignSelf={"flex-start"}
+            rounded={"md"}
+          >
+            Education
+          </Text>
+          <Text
+            color={useColorModeValue("gray.500", "gray.300")}
+            fontSize={"lg"}
+          >
+            I studied a Bachelors in Electronics Engineering and a Masters
+            degree in Information Technologies. Recently, I have learned web
+            development with ReactJS and NextJS.
+          </Text>
           <Stack
             spacing={4}
             divider={

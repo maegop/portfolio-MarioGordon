@@ -47,7 +47,7 @@ export default function CallToActionHero() {
             fontSize={"lg"}
             color={useColorModeValue("gray.500", "gray.300")}
           >
-            Passionate about new technologies
+            Passionate about new technologies and fast Web Services
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
