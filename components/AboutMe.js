@@ -49,7 +49,10 @@ export default function AboutMe() {
             Experience
           </Text>
 
-          <Text color={"gray.500"} fontSize={"lg"}>
+          <Text
+            color={useColorModeValue("gray.500", "gray.300")}
+            fontSize={"lg"}
+          >
             Web developer with knowledge in Fronted technologies, working with
             Linux servers, Cloud Computing, and Data Analytics. I am from
             Ecuador, but I live in Düren, Germany. I am passionate about

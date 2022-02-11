@@ -8,6 +8,7 @@ import {
   Button,
   Image,
   Img,
+  useColorModeValue,
 } from "@chakra-ui/react";
 
 export default function CallToActionHero() {
@@ -42,10 +43,11 @@ export default function CallToActionHero() {
               Software Developer
             </Text>
           </Heading>
-          <Text color={"gray.500"}>
-            Snippy is a rich coding snippets app that lets you create your own
-            code snippets, categorize them, and even sync them in the cloud so
-            you can use them anywhere. All that is free!
+          <Text
+            fontSize={"lg"}
+            color={useColorModeValue("gray.500", "gray.300")}
+          >
+            Passionate about new technologies
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -62,9 +64,9 @@ export default function CallToActionHero() {
             >
               Know me
             </Button>
-            <Button rounded={"full"} size={"lg"} fontWeight={"normal"} px={6}>
+            {/* <Button rounded={"full"} size={"lg"} fontWeight={"normal"} px={6}>
               How It Works
-            </Button>
+            </Button> */}
           </Stack>
         </Stack>
 
@@ -84,7 +86,7 @@ export default function CallToActionHero() {
             width={"full"}
           >
             <Img
-              alt={"Hero Image Mario Gordon Portfolio"}
+              alt={"Hero Image Portfolio Mario Gordon"}
               fit={"cover"}
               align={"right"}
               width={{ base: 250, md: 300 }}

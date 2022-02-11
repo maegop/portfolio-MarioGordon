@@ -50,9 +50,7 @@ const Navbar = () => {
               router.pathname.includes("/blog") ? navHoverBg[colorMode] : null
             }
             aria-label="Blog"
-          >
-            Blog
-          </Button>
+          ></Button>
         </NextLink>
         <NextLink href="/projects" passHref>
           <Button
@@ -64,9 +62,7 @@ const Navbar = () => {
               router.pathname === "/projects" ? navHoverBg[colorMode] : null
             }
             aria-label="Projects"
-          >
-            Projects
-          </Button>
+          ></Button>
         </NextLink>
       </Box>
       <DarkModeSwitch />
