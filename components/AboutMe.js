@@ -37,6 +37,14 @@ export default function AboutMe() {
         <Stack spacing={4}>
           <Heading>About me</Heading>
           <Text
+            color={useColorModeValue("gray.500", "gray.300")}
+            fontSize={"lg"}
+          >
+            I&apos;m Mario Gordon, a Fullstack Software Developer working with
+            Python in the Backend and React in the Frontend. I&apos;m living in
+            Düren, Germany and looking for a full-time job position.
+          </Text>
+          <Text
             textTransform={"uppercase"}
             color={"teal.400"}
             fontWeight={600}
@@ -53,10 +61,15 @@ export default function AboutMe() {
             color={useColorModeValue("gray.500", "gray.300")}
             fontSize={"lg"}
           >
-            Web developer with knowledge in Fronted technologies, working with
-            Linux servers, Cloud Computing, and Data Analytics. I am from
-            Ecuador, but I live in Düren, Germany. I am passionate about
-            technology and software development.
+            My working style is highly energetic and motivated to use up-to-date
+            tecnologies. I have over 7 years of corporate experience in the
+            largest Ecuadorian state telecommunications company, CNT. I have
+            worked with Linux servers, Mobile Technologies, and Data Analytics.
+            <br /> <br />
+            In addition, at Road-Track as Quality Assurance Engineer, where in
+            only 3 months I was given the opportunity to work with the R&D team
+            in Israel, to be part of a project for an innovative generation
+            system for automotive tracking and security.
           </Text>
 
           <Text
