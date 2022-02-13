@@ -46,10 +46,10 @@ export default function SmallCentered() {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© Made with Love by Mario Gordon.</Text>
+          <Text>© Made with 🔥 by Mario Gordon.</Text>
 
           <Stack direction={"row"} spacing={7}>
-            <Tooltip label={"Share my work"} closeOnClick={true} hasArrow>
+            <Tooltip label={"Share my work"} closeOnClick={false} hasArrow>
               <Link
                 href={
                   "https://twitter.com/intent/tweet?text=Check%20out%20a%20Software%20Developer%20Portfolio%20built%20by%20@Mario_Gordon%20https://mariogordon.netlify.app"
@@ -68,7 +68,7 @@ export default function SmallCentered() {
               <FaGithub />
             </Link>
 
-            <Tooltip label={"Share my work"} closeOnClick={true} hasArrow>
+            <Tooltip label={"Share my work"} closeOnClick={false} hasArrow>
               <Link
                 href={
                   "https://www.linkedin.com/shareArticle?mini=true&url=https://mariogordon.netlify.app"

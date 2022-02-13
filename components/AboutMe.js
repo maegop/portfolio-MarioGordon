@@ -1,6 +1,7 @@
 import {
   Container,
   SimpleGrid,
+  Image,
   Img,
   Flex,
   Heading,
@@ -35,7 +36,30 @@ export default function AboutMe() {
           />
         </Flex>
         <Stack spacing={4}>
-          <Heading>About me</Heading>
+          <Heading
+            letterSpacing="normal"
+            mt={8}
+            size="lg"
+            fontWeight={700}
+            as="h2"
+            mb={4}
+            fontSize={{
+              base: "4xl",
+              md: "5xl",
+            }}
+          >
+            About me
+            <Image
+              alt={"about icon"}
+              src={
+                "https://affectionate-engelbart-c0321f.netlify.app/images/mem_guino.png"
+              }
+              display="inline-block"
+              boxSize={{ base: "40px", md: "60px" }}
+              objectFit="cover"
+              arial-label="About me icon"
+            />
+          </Heading>
           <Text
             color={useColorModeValue("gray.500", "gray.300")}
             fontSize={"lg"}

@@ -9,6 +9,7 @@ import {
   Input,
   InputGroup,
   Link,
+  Image,
   Stack,
   Textarea,
   Tooltip,
@@ -61,8 +62,24 @@ export default function ContactMe() {
                 base: "4xl",
                 md: "5xl",
               }}
+              letterSpacing="normal"
+              mt={8}
+              size="lg"
+              fontWeight={700}
+              as="h2"
+              mb={4}
             >
               Get in Touch
+              <Image
+                display="inline-block"
+                alt={"contact me icon"}
+                arial-label="Contact me icon"
+                src={
+                  "https://affectionate-engelbart-c0321f.netlify.app/images/mem_call.png"
+                }
+                boxSize={{ base: "40px", md: "70px" }}
+                objectFit="cover"
+              />
             </Heading>
 
             <Stack

@@ -3,6 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 import {
   Heading,
   Text,
+  Img,
   Box,
   SimpleGrid,
   useColorModeValue,
@@ -21,14 +22,28 @@ const Projects = () => {
     >
       <Box as="section" mt={10} mb={20}>
         <Heading
-          letterSpacing="tight"
+          letterSpacing="normal"
           mt={8}
           size="lg"
           fontWeight={700}
           as="h2"
           mb={4}
+          fontSize={{
+            base: "4xl",
+            md: "5xl",
+          }}
         >
-          My Projects 👨‍💻
+          My Projects{" "}
+          <Img
+            alt={"about icon"}
+            display="inline-block"
+            src={
+              "https://affectionate-engelbart-c0321f.netlify.app/images/mem_computer.png"
+            }
+            boxSize={{ base: "40px", md: "70px" }}
+            objectFit="cover"
+            arial-label="Projects icon"
+          />
         </Heading>
         <SimpleGrid minChildWidth="300px" spacing="40px">
           <ProjectCard
