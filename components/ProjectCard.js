@@ -76,7 +76,7 @@ export default function ProjectCard({
               <Link
                 href={stargazersUrl.replace("api.", "").replace("repos/", "")}
                 _hover={{ textDecor: "none" }}
-                isExternal
+                isexternal="true"
               >
                 <Flex opacity={opacity} transition="opacity .5s ease-in-out">
                   <Button
@@ -91,7 +91,7 @@ export default function ProjectCard({
             )}
 
             {homepage && (
-              <Link href={homepage} isExternal>
+              <Link href={homepage} isexternal="true">
                 <IconButton
                   icon={
                     homepage.includes("youtu.be") ? (
@@ -108,7 +108,7 @@ export default function ProjectCard({
             )}
 
             {repoHref && (
-              <Link href={repoHref} isExternal>
+              <Link href={repoHref} isexternal="true">
                 <IconButton
                   icon={<FaGithub />}
                   variant="ghost"
@@ -118,7 +118,7 @@ export default function ProjectCard({
               </Link>
             )}
             {demoHref && (
-              <Link href={demoHref} isExternal>
+              <Link href={demoHref} isexternal="true">
                 <IconButton
                   icon={<ExternalLinkIcon />}
                   variant="ghost"

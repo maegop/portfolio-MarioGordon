@@ -54,7 +54,7 @@ export default function SmallCentered() {
                 href={
                   "https://twitter.com/intent/tweet?text=Check%20out%20a%20Software%20Developer%20Portfolio%20built%20by%20@Mario_Gordon%20https://mariogordon.netlify.app"
                 }
-                isExternal
+                isexternal="true"
               >
                 <FaTwitter />
               </Link>
@@ -62,7 +62,7 @@ export default function SmallCentered() {
 
             <Link
               href={"https://twitter.com/Mario_Gordon"}
-              passHref
+              passhref="true"
               rel="noopener noreferrer"
             >
               <FaGithub />
@@ -73,7 +73,7 @@ export default function SmallCentered() {
                 href={
                   "https://www.linkedin.com/shareArticle?mini=true&url=https://mariogordon.netlify.app"
                 }
-                isExternal
+                isexternal="true"
               >
                 <FaLinkedin />
               </Link>

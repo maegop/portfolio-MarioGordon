@@ -25,7 +25,7 @@ const Navbar = () => {
       mx="auto"
     >
       <Box>
-        <NextLink href="/" passHref>
+        <NextLink href="/" passhref="true">
           <Button
             as="a"
             variant="ghost"
@@ -40,7 +40,7 @@ const Navbar = () => {
           </Button>
         </NextLink>
 
-        <NextLink href="/blog" passHref>
+        <NextLink href="/blog" passhref="true">
           <Button
             as="a"
             variant="ghost"
@@ -52,7 +52,7 @@ const Navbar = () => {
             aria-label="Blog"
           ></Button>
         </NextLink>
-        <NextLink href="/projects" passHref>
+        <NextLink href="/projects" passhref="true">
           <Button
             as="a"
             variant="ghost"

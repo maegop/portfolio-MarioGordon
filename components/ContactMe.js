@@ -106,7 +106,7 @@ export default function ContactMe() {
                       color: useColorModeValue("white", "gray.700"),
                     }}
                     isRound
-                    isExternal="true"
+                    isexternal="true"
                   />
                 </Link>
 
@@ -148,7 +148,7 @@ export default function ContactMe() {
                 shadow="base"
                 name="contact"
                 method="POST"
-                netlify
+                netlify="true"
                 action="/blog"
               >
                 <input type="hidden" name="form-name" value="contact" />
