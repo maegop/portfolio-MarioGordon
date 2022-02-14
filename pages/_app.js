@@ -24,6 +24,7 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider>
       <Head>
         <link rel="shortcut icon" href="/images/mem_happy.png" />
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
 
       {/* Global Site Tag (gtag.js) - Google Analytics */}
@@ -46,6 +47,7 @@ function MyApp({ Component, pageProps }) {
           `,
         }}
       />
+
       {/* It makes the same SEO config for each page */}
       <DefaultSeo {...SEO} />
       <Component {...pageProps} />
