@@ -47,7 +47,8 @@ export default function CallToActionHero() {
             fontSize={"lg"}
             color={useColorModeValue("gray.500", "gray.300")}
           >
-            Passionate about new technologies and fast Web Services
+            Learning continuously about web development, serverless, and React /
+            Next.js to build a faster web.
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -78,24 +79,23 @@ export default function CallToActionHero() {
           position={"relative"}
           w={"full"}
         >
-          <Box
+          {/* <Box
             position={"relative"}
             height={"320px"}
             rounded={"2xl"}
             boxShadow={"2xl"}
             width={"full"}
-          >
-            <Img
-              alt={"Hero Image Portfolio Mario Gordon"}
-              fit={"cover"}
-              align={"right"}
-              width={{ base: 250, md: 300 }}
-              height={{ base: 260, md: 320 }}
-              src={
-                "https://affectionate-engelbart-c0321f.netlify.app/images/mem_happy.png"
-              }
-            />
-          </Box>
+          ></Box> */}
+          <Img
+            alt={"Hero Image Portfolio Mario Gordon"}
+            fit={"cover"}
+            align={"right"}
+            width={{ base: 250, md: 300 }}
+            height={{ base: 260, md: 320 }}
+            src={
+              "https://affectionate-engelbart-c0321f.netlify.app/images/mem_happy.png"
+            }
+          />
         </Flex>
       </Stack>
     </Container>

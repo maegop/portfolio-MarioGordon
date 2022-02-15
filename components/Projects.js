@@ -43,6 +43,7 @@ const Projects = () => {
             boxSize={{ base: "40px", md: "70px" }}
             objectFit="cover"
             arial-label="Projects icon"
+            ml={4}
           />
         </Heading>
         <SimpleGrid minChildWidth="300px" spacing="40px">

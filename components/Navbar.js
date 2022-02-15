@@ -40,19 +40,21 @@ const Navbar = () => {
           </Button>
         </NextLink>
 
-        <NextLink href="/blog" passhref="true">
+        <NextLink href="/about" passhref="true">
           <Button
             as="a"
             variant="ghost"
             p={[1, 2, 4]}
             _hover={{ backgroundColor: navHoverBg[colorMode] }}
             backgroundColor={
-              router.pathname.includes("/blog") ? navHoverBg[colorMode] : null
+              router.pathname.includes("/about") ? navHoverBg[colorMode] : null
             }
-            aria-label="Blog"
-          ></Button>
+            aria-label="About"
+          >
+            About
+          </Button>
         </NextLink>
-        <NextLink href="/projects" passhref="true">
+        {/* <NextLink href="/projects" passhref="true">
           <Button
             as="a"
             variant="ghost"
@@ -63,7 +65,7 @@ const Navbar = () => {
             }
             aria-label="Projects"
           ></Button>
-        </NextLink>
+        </NextLink> */}
       </Box>
       <DarkModeSwitch />
     </Flex>

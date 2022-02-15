@@ -79,6 +79,7 @@ export default function ContactMe() {
                 }
                 boxSize={{ base: "40px", md: "70px" }}
                 objectFit="cover"
+                ml={4}
               />
             </Heading>
 

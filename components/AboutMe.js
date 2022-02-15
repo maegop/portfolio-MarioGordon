@@ -8,6 +8,7 @@ import {
   Text,
   Stack,
   StackDivider,
+  Link,
   Icon,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -58,6 +59,7 @@ export default function AboutMe() {
               boxSize={{ base: "40px", md: "60px" }}
               objectFit="cover"
               arial-label="About me icon"
+              ml={4}
             />
           </Heading>
           <Text
@@ -116,6 +118,14 @@ export default function AboutMe() {
             degree in Information Technologies. Recently, I have learned web
             development with ReactJS and NextJS.
           </Text>
+
+          <Link
+            href="/about"
+            color={useColorModeValue("gray.600", "gray.200")}
+            fontSize={"xl"}
+          >
+            Read more
+          </Link>
           <Stack
             spacing={4}
             divider={

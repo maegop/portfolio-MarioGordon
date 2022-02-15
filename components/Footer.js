@@ -61,7 +61,7 @@ export default function SmallCentered() {
             </Tooltip>
 
             <Link
-              href={"https://twitter.com/Mario_Gordon"}
+              href={"https://github.com/maegop"}
               passhref="true"
               rel="noopener noreferrer"
             >
