@@ -60,8 +60,9 @@ export default function CallToActionHero() {
               fontWeight={"normal"}
               px={6}
               colorScheme={"teal"}
-              bg={"teal.400"}
+              //bg={"teal.400"}
               _hover={{ bg: "teal.500" }}
+              bgGradient="linear(to-l, #7928CA,teal.400)"
             >
               Know me
             </Button>
