@@ -38,7 +38,7 @@ const Projects = () => {
             alt={"about icon"}
             display="inline-block"
             src={
-              "https://affectionate-engelbart-c0321f.netlify.app/images/mem_computer.png"
+              "https://res.cloudinary.com/dxjaruq2p/image/upload/v1647360171/protfolio/mem_computer_vdrx7i.png"
             }
             boxSize={{ base: "40px", md: "70px" }}
             objectFit="cover"

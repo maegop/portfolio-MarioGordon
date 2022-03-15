@@ -30,7 +30,7 @@ export default function AboutMe() {
             alt={"about me image"}
             loading={"lazy"}
             src={
-              "https://affectionate-engelbart-c0321f.netlify.app/images/profile.jpg"
+              "https://res.cloudinary.com/dxjaruq2p/image/upload/v1647361234/protfolio/profile_agjslh.jpg"
             }
             objectFit={"cover"}
             layout="fill"
@@ -53,7 +53,7 @@ export default function AboutMe() {
             <Image
               alt={"about icon"}
               src={
-                "https://affectionate-engelbart-c0321f.netlify.app/images/mem_guino.png"
+                "https://res.cloudinary.com/dxjaruq2p/image/upload/v1647360154/protfolio/mem_guino_pak8fh.png"
               }
               display="inline-block"
               boxSize={{ base: "40px", md: "60px" }}

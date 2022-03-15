@@ -10,6 +10,7 @@ import {
   Img,
   useColorModeValue,
 } from "@chakra-ui/react";
+import NextLink from "next/link";
 
 export default function CallToActionHero() {
   return (
@@ -54,18 +55,21 @@ export default function CallToActionHero() {
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
           >
-            <Button
-              rounded={"full"}
-              size={"lg"}
-              fontWeight={"normal"}
-              px={6}
-              colorScheme={"teal"}
-              //bg={"teal.400"}
-              _hover={{ bg: "teal.500" }}
-              bgGradient="linear(to-l, #7928CA,teal.400)"
-            >
-              Know me
-            </Button>
+            <NextLink href="/" passhref="true">
+              <Button
+                rounded={"full"}
+                size={"lg"}
+                fontWeight={"normal"}
+                px={6}
+                colorScheme={"teal"}
+                //bg={"teal.400"}
+                _hover={{ bg: "teal.500" }}
+                bgGradient="linear(to-l, #7928CA,teal.400)"
+              >
+                Know me
+              </Button>
+            </NextLink>
+
             {/* <Button rounded={"full"} size={"lg"} fontWeight={"normal"} px={6}>
               How It Works
             </Button> */}
@@ -94,7 +98,7 @@ export default function CallToActionHero() {
             width={{ base: 250, md: 300 }}
             height={{ base: 260, md: 320 }}
             src={
-              "https://affectionate-engelbart-c0321f.netlify.app/images/mem_happy.png"
+              "https://res.cloudinary.com/dxjaruq2p/image/upload/v1647360154/protfolio/mem_happy_bfqrn9.png"
             }
           />
         </Flex>

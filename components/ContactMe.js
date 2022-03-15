@@ -75,7 +75,7 @@ export default function ContactMe() {
                 alt={"contact me icon"}
                 arial-label="Contact me icon"
                 src={
-                  "https://affectionate-engelbart-c0321f.netlify.app/images/mem_call.png"
+                  "https://res.cloudinary.com/dxjaruq2p/image/upload/v1647360172/protfolio/mem_call_rmqniv.png"
                 }
                 boxSize={{ base: "40px", md: "70px" }}
                 objectFit="cover"
