@@ -63,6 +63,14 @@ const Projects = () => {
             languageColor="#f1e05a"
             language="JavaScript | NextJS"
           />
+          <ProjectCard
+            title="Branding Website"
+            description="A SPA website designed for personal branding to show projects and skills. Library used for animations FramerMotion"
+            repoHref="https://github.com/maegop/Personal-Portfolio-Website"
+            demoHref="https://github.com/maegop/Personal-Portfolio-Website"
+            languageColor="#f1e05a"
+            language="JavaScript | ReactJS"
+          />
         </SimpleGrid>
       </Box>
     </Container>
